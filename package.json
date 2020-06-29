@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Personal Webpage",
   "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "build": "parcel build src/index.pug"
+  },
   "repository": "https://github.com/imreyesjorge/reyes",
   "author": "Jorge Reyes <reyestrevjorge@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^3.0.0"
   }
 }
