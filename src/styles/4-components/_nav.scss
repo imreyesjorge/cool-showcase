@@ -1,3 +1,35 @@
 .nav {
     width: 100%;
 }
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item:link,
+    &__item:visited {
+        color: lighten($primary, 30%);
+        text-decoration: none;
+
+        margin: 1rem;
+        padding: 1rem 2rem;
+
+        background-color: rgba(white, .08);
+        border-radius: 5px;
+
+        transition: .2s;
+
+        &:hover {
+            background-color: rgba(white, .15);
+        }
+    }
+}

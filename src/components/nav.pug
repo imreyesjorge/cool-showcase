@@ -1,2 +1,17 @@
+-
+    let menu = [
+        {
+            name: 'Home',
+            url: '#'
+        },
+        {
+            name: 'Portfolio',
+            url: '#'
+        }
+    ]
+
 nav.nav
-    
+    ul.menu
+        each item in menu
+            li
+                a(href=item.url).menu__item= item.name
