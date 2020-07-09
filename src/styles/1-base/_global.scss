@@ -15,4 +15,6 @@ body {
     height: 100vh;
 
     box-sizing: border-box;
+    background-color: whitesmoke;
+    background-image:linear-gradient(to bottom, $primary 0%, $primary 35%, whitesmoke 35%);
 }
