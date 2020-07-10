@@ -1,7 +1,17 @@
 extends layouts/main.pug
 
 block content
-    .index
-        include components/nav.pug
-        main
-            img(src="assets/images/avatar.webp") 
+    main.main
+        .main__header
+            img(src="assets/images/avatar.webp", alt="A photo of Jorge Reyes")
+        .main__content
+            h2.main__content__name Jorge Reyes
+            small.main__content__title Software Engineer Student
+            .social
+                a(href="https://github.com/imreyesjorge" target="_blank")
+                    i.fab.fa-github
+                a(href="https://twitter.com/imreyesjorge" target="_blank")
+                    i.fab.fa-twitter
+                a(href="https://www.linkedin.com/in/jorgert1205/" target="_blank")
+                    i.fab.fa-linkedin
+
