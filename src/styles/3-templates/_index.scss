@@ -1,21 +1,83 @@
-    main {
-        width: 100%;
-        height: 100vh;
+.main {
+  width: 100%;
+  height: 100vh;
 
-        img {
-            width: 250px;
-            height: 250px;
-            
-            border-radius: 50%;
-            border: 6px solid whitesmoke;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 
-            object-fit: cover;
-            object-position: center;
+  &__header {
+    $size: 70%;
 
-            position: absolute;
-            top: 35%;
-            left: 50%;
+    width: 100%;
+    height: 100%;
 
-            transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    background-image: linear-gradient(
+      to bottom,
+      $primary 0%,
+      $primary $size,
+      whitesmoke $size
+    );
+
+    position: relative;
+
+    img {
+      width: 250px;
+      height: 250px;
+
+      border-radius: 50%;
+      border: 6px solid whitesmoke;
+
+      object-fit: cover;
+      object-position: center;
+
+      position: absolute;
+      top: $size;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    &__name {
+      color: #242424;
+
+      font-size: 3rem;
+      font-weight: bold;
+
+      margin-bottom: 0.8rem;
+    }
+
+    &__title {
+      color: $primary;
+
+      padding: 0.5em 1em;
+
+      background-color: rgba($primary, 0.2);
+      border-radius: 5px;
+    }
+  }
+}
+
+.social {
+    color: #242424;
+
+    font-size: 3rem;
+
+    margin-top: 2rem;
+
+    a:link,
+    a:visited {
+        color: inherit;
+
+        margin: 1rem;
+        transition: .2s;
+
+        &:hover {
+            color: $primary;
         }
     }
+}
