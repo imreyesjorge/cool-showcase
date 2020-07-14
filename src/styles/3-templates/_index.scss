@@ -25,6 +25,11 @@
       width: 250px;
       height: 250px;
 
+      @media screen and (max-width: 600px) {
+        width: 200px;
+        height: 200px;
+      }
+
       border-radius: 50%;
       border: 6px solid whitesmoke;
 
@@ -48,7 +53,7 @@
       font-size: 3rem;
       font-weight: bold;
 
-      margin-bottom: 0.8em;
+      margin-bottom: 0.4em;
     }
 
     &__title {
