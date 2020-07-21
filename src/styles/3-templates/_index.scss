@@ -5,6 +5,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 
+  display: relative;
+
   &__header {
     $size: 70%;
 
@@ -65,24 +67,65 @@
       border-radius: 5px;
     }
   }
+
+  &__cta:link,
+  &__cta:visited {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    padding: 1rem 4rem;
+
+    background-color: $primary;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: .2s;
+
+    span {
+      margin-right: .6rem;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 100px rgba(black , .1);
+    }
+
+  }
+
 }
 
 .social {
-    color: #242424;
+  color: #242424;
 
-    font-size: 3rem;
+  font-size: 3rem;
 
-    margin-top: 2rem;
+  margin-top: 2rem;
 
-    a:link,
-    a:visited {
-        color: inherit;
+  a:link,
+  a:visited {
+    color: inherit;
 
-        margin: 1rem;
-        transition: .2s;
+    margin: 1rem;
+    transition: 0.2s;
 
-        &:hover {
-            color: $primary;
-        }
+    &:hover {
+      color: $primary;
     }
+  }
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(165deg, transparent, transparent 50%, $primary 50%);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
