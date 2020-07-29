@@ -8,8 +8,8 @@
     padding: 1rem;
 
     background-color: white;
-    box-shadow: 0 0 24px rgba(black, .2);
-    border-radius: 20px;
+    box-shadow: 0 0 24px rgba(grey, .1);
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
         height:  50%;
 
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid rgba(black, .1);
     }
 
@@ -41,18 +41,19 @@
 
     &__link:link,
     &__link:visited {
-        color: $dark;
+        color: white;
+        font-weight: 500;
         text-decoration: none;
 
         padding: .5rem;
 
-        background-color: $secondary;
-        border-radius: 10px;
+        background-color: $primary;
+        border-radius: 5px;
 
         transition: .2s;
 
         &:hover {
-            background-color: lighten($secondary, 8%);
+            background-color: lighten($primary, 4%);
         }
     }
 }
