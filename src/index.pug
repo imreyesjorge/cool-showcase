@@ -16,11 +16,10 @@ block content
                     i.fab.fa-linkedin
         a(href="#projects").main__cta 
             span Projects
-            i.fas.fa-hammer
     .projects#projects
         each project in projects
-            .card
+            a(href=project.link target="_blank").card
                 img(src=project.img).card__img
                 h3.card__title= project.name
+                i.fas.fa-external-link-alt.external-link
                 p.card__description= project.desc
-                a(href=project.link target="_blank").card__link See more

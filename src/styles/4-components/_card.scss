@@ -1,11 +1,10 @@
 .card {
     text-align: center;
 
-    width: 280px;
-    height: 400px;
+    width: 350px;
+    height: 320px;
 
     margin: 2rem;
-    padding: 1rem;
 
     background-color: white;
     box-shadow: 0 0 24px rgba(grey, .1);
@@ -15,7 +14,16 @@
     flex-direction: column;
     justify-content: space-between;
 
+    position: relative;
+
     transition: .2s;
+    overflow: hidden;
+
+    &:link,
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
 
     &:hover {
         box-shadow: 0 0 32px rgba(black, .2);
@@ -24,36 +32,45 @@
 
     &__img {
         width: 100%;
-        height:  50%;
+        height:  80%;
 
         object-fit: cover;
-        border-radius: 5px;
-        border: 1px solid rgba(black, .1);
+        filter: brightness(70%);
     }
 
     &__title {
+        color: white;
         font-size: 1.5rem;
+        text-shadow: 0 0 12px rgba(black, .5);
+
+        margin: 1rem;
+
+        position: absolute;
+        top: 0;
+        left:0;
     }
 
     &__description {
-        font-weight: 200;
+        color: rgba(black, .8);
+        font-weight: normal;
+        
+        height: 30%;
+        
+        padding: 1rem;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
+}
 
-    &__link:link,
-    &__link:visited {
-        color: white;
-        font-weight: 500;
-        text-decoration: none;
+.external-link {
+    color: white;
+    text-shadow: 0 0 12px rgba(black, .5);
 
-        padding: .5rem;
+    margin: 1rem;
 
-        background-color: $primary;
-        border-radius: 5px;
-
-        transition: .2s;
-
-        &:hover {
-            background-color: lighten($primary, 4%);
-        }
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
 }
