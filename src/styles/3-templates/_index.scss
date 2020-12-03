@@ -115,12 +115,20 @@
     color: inherit;
 
     margin: 1rem;
+
     transition: 0.2s;
 
     &:hover {
       color: $primary;
     }
   }
+}
+
+.icon {
+  padding: .8rem;
+
+  background-color: #333;
+  border-radius: 10px;
 }
 
 .projects {
