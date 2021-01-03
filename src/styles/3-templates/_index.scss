@@ -14,6 +14,7 @@
     height: 100%;
 
     background-color: whitesmoke;
+    border-radius: 10px;
     background-image: linear-gradient(
       to bottom,
       $primary 0%,
@@ -79,6 +80,10 @@
     
     background-color: $primary;
     border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     position: absolute;
     top: 85%;
@@ -86,6 +91,10 @@
     
     transform: translate(-50%, -50%);
     transition: .2s;
+
+    svg {
+      width: 20px;
+    }
     
     @media screen and (max-width: 600px) {
       top: 90%;
@@ -106,29 +115,37 @@
 .social {
   color: #242424;
 
-  font-size: 3rem;
-
   margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a:link,
   a:visited {
     color: inherit;
 
     margin: 1rem;
+    padding: .8rem;
 
-    transition: 0.2s;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
 
     &:hover {
-      color: $primary;
+      border-color: rgba(grey, .25);
     }
   }
 }
 
 .icon {
-  padding: .8rem;
-
-  background-color: #333;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .projects {
