@@ -8,9 +8,10 @@
   display: relative;
 
   &__header {
-    $size: 70%;
+    $size: 60%;
 
     width: 100%;
+    min-height: 250px;
     height: 100%;
 
     background-color: whitesmoke;
@@ -25,8 +26,8 @@
     position: relative;
 
     img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
 
       @media screen and (max-width: 600px) {
         width: 200px;
@@ -37,7 +38,7 @@
       border: 6px solid whitesmoke;
 
       object-fit: cover;
-      object-position: 0 0;
+      object-position: center;
 
       position: absolute;
       top: $size;
@@ -48,7 +49,10 @@
   }
 
   &__content {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
 
     &__name {
       color: #242424;
@@ -75,47 +79,41 @@
     font-weight: 600;
     text-decoration: none;
 
+    width: 250px;
+
     padding: 1rem 4rem;
 
-    
     background-color: $primary;
     border-radius: 8px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    transition: .2s;
+
+    transition: 0.2s;
 
     svg {
       width: 20px;
     }
-    
+
     @media screen and (max-width: 600px) {
       top: 90%;
     }
 
     span {
-      margin-right: .4rem;
+      margin-right: 0.4rem;
     }
-    
+
     &:hover {
-      box-shadow: inset 0 0 0 100px rgba(black , .1);
+      box-shadow: inset 0 0 0 100px rgba(black, 0.1);
     }
-
   }
-
 }
 
 .social {
   color: #242424;
 
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   display: flex;
   justify-content: center;
@@ -126,7 +124,7 @@
     color: inherit;
 
     margin: 1rem;
-    padding: .8rem;
+    padding: 0.8rem;
 
     border-radius: 10px;
     border: 1px solid transparent;
@@ -135,10 +133,10 @@
     justify-content: center;
     align-items: center;
 
-    transition: .2s;
+    transition: 0.2s;
 
     &:hover {
-      border-color: rgba(grey, .25);
+      border-color: rgba(grey, 0.25);
     }
   }
 }

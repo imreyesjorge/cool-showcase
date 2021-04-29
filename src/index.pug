@@ -6,7 +6,7 @@ block content
             img(src="assets/images/avatar.webp" alt="A photo of Jorge Reyes")
         .main__content
             h2.main__content__name Jorge Reyes
-            small.main__content__title Open-Source Kiddie
+            small.main__content__title Founder at Lintori
             .social
                 a(href="https://github.com/imreyesjorge" target="_blank")
                     img(src="assets/icons/github.svg" alt="Github logo").icon
@@ -14,11 +14,11 @@ block content
                     img(src="assets/icons/twitter.svg" alt="Twitter logo").icon
                 a(href="https://www.linkedin.com/in/jorgert1205/" target="_blank")
                     img(src="assets/icons/linkedin.svg" alt="Linkedin logo").icon
-        a(href="#projects").main__cta 
-            span Projects
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-            </svg>
+            a(href="#projects").main__cta 
+                span Projects
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                </svg>
     .projects#projects
         each project in projects
             a(href=project.link target="_blank").card
