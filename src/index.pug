@@ -24,5 +24,9 @@ block content
             a(href=project.link target="_blank").card
                 img(src=project.img).card__img
                 h3.card__title= project.name
-                i.fas.fa-external-link-alt.external-link
-                p.card__description= project.desc
+                img(src="assets/icons/Logout.svg").card__icon
+                .card__body
+                    p.card__body__description= project.desc
+                    .card__body__tags 
+                        each tag in project.tags
+                            small.card__tags__tag= tag
