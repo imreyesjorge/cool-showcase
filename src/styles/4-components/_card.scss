@@ -18,6 +18,13 @@
   transition: 0.2s;
   overflow: hidden;
 
+  outline: 3px solid transparent;
+
+  &:focus {
+    outline: 3px solid $primary;
+    outline-offset: 4px;
+  }
+
   &:link,
   &:visited {
     color: inherit;

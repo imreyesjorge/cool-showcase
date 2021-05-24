@@ -41,6 +41,11 @@
       position: absolute;
       top: 0;
       right: 0;
+
+      &:focus {
+        outline: 2px solid white;
+        outline-offset: 2px;
+      }
     }
 
     img {
@@ -110,12 +115,16 @@
 
     transition: 0.2s;
 
-    svg {
-      width: 20px;
+    outline: none;
+
+    &:focus {
+      color: $primary;
+      background-color: white;
+      border: 1px solid $primary;
     }
 
-    @media screen and (max-width: 600px) {
-      top: 90%;
+    svg {
+      width: 20px;
     }
 
     span {
@@ -152,6 +161,13 @@
     align-items: center;
 
     transition: 0.2s;
+
+    outline: 3px solid transparent;
+
+    &:focus {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
 
     &:hover {
       border-color: rgba(grey, 0.25);
