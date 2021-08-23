@@ -2,10 +2,9 @@
   "name": "reyes",
   "version": "1.0.0",
   "description": "Personal Webpage",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug -d docs"
+    "build": "parcel build src/index.pug --dist-dir docs"
   },
   "repository": "https://github.com/imreyesjorge/reyes",
   "author": "Jorge Reyes <reyestrevjorge@gmail.com>",
